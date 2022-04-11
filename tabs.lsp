@@ -1,0 +1,7 @@
+(defun c:Tabs ()
+ (prompt "\nTab Names: ")
+ (foreach layout (layoutlist)
+   (print layout)
+ )
+ (princ)
+)

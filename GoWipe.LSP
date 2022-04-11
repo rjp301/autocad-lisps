@@ -1,0 +1,5 @@
+(defun c:gowipe (/ b)
+ (setvar "pickstyle" 0)
+ (setq b (ssget "x" '((0 . "wipeout"))))
+ (command "._erase" b "")
+)

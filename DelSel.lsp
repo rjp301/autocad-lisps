@@ -1,0 +1,7 @@
+(defun c:DELSEL (/ Ctab Layout)
+	(setq p1 (getpoint "\nFirt Corner: "))
+	(setq p2 (getpoint p1 "\nSecond Corner: "))
+	(setq ss (ssget "w" p1 p2))
+	(command ".erase" ss "")
+	(princ)
+)
